@@ -23,7 +23,7 @@ const ProductItem = ({ id, title, price, image }) => {
                                     <span className="underline"> Sign in </span>
                                     or Create an account to see pricing
                               </span>
-                              <GoHeart className="text-2xl font-bold" />
+                              <GoHeart className="text-2xl font-bold cursor-pointer transition-transform duration-300 hover:text-red-600  hover:scale-110" />
                         </div>
                   </div>
             </div>

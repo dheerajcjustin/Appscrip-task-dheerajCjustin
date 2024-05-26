@@ -1,5 +1,5 @@
 import React from "react";
-import { Vector } from "./svg/Vector";
+import Vector from "./svg/logo";
 import { GoHeart, GoSearch } from "react-icons/go";
 import { IoBagOutline, IoChevronDownOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Vector = ({ width = 36, height = 36 }) => {
+const logo = ({ width = 36, height = 36 }) => {
       return (
             <svg
                   className="w-6  h-6 md:w-9 md:h-9"
@@ -17,3 +17,5 @@ export const Vector = ({ width = 36, height = 36 }) => {
             </svg>
       );
 };
+
+export default logo;

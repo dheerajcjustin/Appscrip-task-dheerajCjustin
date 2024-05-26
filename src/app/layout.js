@@ -3,6 +3,7 @@ import "./globals.css";
 import TopBar from "@/components/TopBar";
 import NavBar from "@/components/NavBar";
 import TopMenu from "@/components/TopMenu";
+import Footer from "@/components/Footer";
 
 export const metadata = {
       title: "Appscrip",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
                         <NavBar></NavBar>
                         <TopMenu />
                         {children}
+                        <Footer />
                   </body>
             </html>
       );
