@@ -5,14 +5,14 @@ import { GoHeart } from "react-icons/go";
 const ProductItem = ({ id, title, price, image }) => {
       return (
             <div class="p-1  bg-white border border-gray-200 rounded-lg shadow ">
-                  <div className="w-[300px] h-[462px] ">
-                        <div className=" w-[300px] h-[399px]">
+                  <div className="md:w-[300px] w-[160px]  ">
+                        <div className="">
                               <Image
                                     src={image}
                                     alt={`Image of ${title}`}
                                     width={300}
                                     height={399}
-                                    className="object-fill w-[300px] h-[399px] "
+                                    className="object-fill md:w-[300px] w-[160px] md:h-[400px] h-[240px] "
                               />
                         </div>
                         <div className="text-lg font-bold w-[90%] whitespace-nowrap overflow-hidden text-ellipsis">
