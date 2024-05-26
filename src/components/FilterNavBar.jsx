@@ -1,17 +1,43 @@
 import React from "react";
-import { IoChevronBackOutline, IoChevronDownOutline } from "react-icons/io5";
+import {
+      IoChevronBackOutline,
+      IoChevronDownOutline,
+      IoChevronForwardOutline,
+} from "react-icons/io5";
+import HoverSelect from "./HoverSelect";
 
-const FilterNavBar = () => {
+const FilterNavBar = ({ sidBarOpen, toggleSideBar }) => {
       return (
-            <div className=" flex justify-between items-center  py-8  border-y-2 border-gray-300 ">
-                  <div className="flex items-center gap-10">
+            <div className=" flex justify-evenly md:justify-between items-center  py-8  border-y-2 border-gray-300 ">
+                  <div className="md:flex hidden items-center gap-10">
                         <span className="text-lg md:text-xl ">3425 ITEMS</span>
-                        <span className="flex items-center text-sm md:text-lg text-gray-400">
-                              <IoChevronBackOutline /> hide Filters
-                        </span>
+                        <button
+                              className="flex items-center text-sm  md:text-lg text-gray-400 uppercase"
+                              onClick={toggleSideBar}
+                        >
+                              {sidBarOpen ? (
+                                    <>
+                                          <IoChevronBackOutline /> hide Filters
+                                    </>
+                              ) : (
+                                    <>
+                                          <IoChevronForwardOutline /> Show
+                                          Filter
+                                    </>
+                              )}
+                        </button>
                   </div>
-                  <div className="flex items-center text-lg md:text-xl">
-                        Recommended <IoChevronDownOutline />{" "}
+                  <button
+                        className="text-black font-bold md:hidden block   uppercase"
+                        type="button"
+                        onClick={toggleSideBar}
+                  >
+                        filter
+                  </button>
+                  <div className=" md:hidden block  text-gray-600">|</div>
+
+                  <div className=" text-lg md:text-xl">
+                        <HoverSelect />
                   </div>
             </div>
       );

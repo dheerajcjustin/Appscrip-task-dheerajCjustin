@@ -20,6 +20,12 @@ export const viewport = {
 export default function RootLayout({ children }) {
       return (
             <html lang="en">
+                  <link rel="icon" href="/favicon.svg" sizes="any" />;
+                  <link
+                        rel="apple-touch-icon"
+                        href="/favicon.svg"
+                        sizes="any"
+                  />
                   <body className=" ">
                         <TopBar></TopBar>
                         <NavBar></NavBar>
